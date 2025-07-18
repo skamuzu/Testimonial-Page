@@ -17,6 +17,7 @@ header {
     justify-content: center;
     gap: 1rem;
     padding-bottom: 2rem;
+    line-height: 1.5rem;
 }
 
 p, header li {
@@ -67,7 +68,7 @@ header li::before {
 }
 
 section {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     padding: 2em;
     display: flex;
     flex-direction: column;
