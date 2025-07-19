@@ -96,7 +96,7 @@ header li::before {
 }
 
 section {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     padding: 2em;
     margin: auto;
     display: flex;
