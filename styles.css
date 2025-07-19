@@ -24,9 +24,37 @@ p, header li {
     color: rgb(71, 71, 71);
 }
 
-header img {
-    width: 2rem;
+.container {
+  background-color: #F5C044; 
+  position: relative;
+  width: 2rem;
+  height: 2rem; 
+  aspect-ratio: auto;
+  overflow: hidden;
+  border-radius: 50%; 
+  display: flex;
 }
+
+.container img {
+  width: 1.3em;
+  height: 1.3em;
+  margin: auto;
+  object-fit: cover;
+  display: block;
+  filter: brightness(1.4);
+
+  -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-position: center;
+
+  mask-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  mask-position: center;
+}
+
+
 
 ul {
     display: flex;
@@ -68,8 +96,9 @@ header li::before {
 }
 
 section {
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     padding: 2em;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -88,22 +117,22 @@ main {
     gap: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     html, body {
-        padding: 1rem 2rem; /* Slightly more padding for tablet */
+        padding: 1rem 2rem; 
     }
 
     header p {
-        max-width: 80%; /* Make paragraph width a little larger for tablet screens */
+        max-width: 80%; 
     }
 
     main {
-        width: 80%; /* Main content slightly larger */
+        width: 80%; 
         margin: auto;
     }
 
     section {
-        width: 60%; /* Sections expand a little on tablet */
+        width: clamp(350px, 60% + 2em, 397px); 
     }
 
     #right {
@@ -128,14 +157,13 @@ main {
 
     main {
         flex: 1;
-        width: 50%;
         display: flex;
         flex-direction: column;
         gap: 1em;
     }
 
     section {
-        width: 60%;
+        width: clamp(300px, 60% + 2em, 336px);
     }
 
     
