@@ -98,7 +98,6 @@ header li::before {
 section {
     /* background-color: aquamarine; */
     padding: 2em;
-    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
